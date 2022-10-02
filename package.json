@@ -27,7 +27,12 @@
     "url": "https://github.com/halitsever/shotsnap/issues"
   },
   "homepage": "https://github.com/halitsever/shotsnap#readme",
-  "engines" : { 
-    "node" : ">=18.0.0"
+  "dependencies": {
+    "buffer": "^6.0.3",
+    "fs": "^0.0.1-security",
+    "node-fetch": "^2.6.7"
+  },
+  "devDependencies": {
+    "jest": "^29.1.2"
   }
 }
