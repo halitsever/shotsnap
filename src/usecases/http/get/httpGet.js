@@ -1,3 +1,4 @@
+const fetch = require("node-fetch");
 /**
  *
  * @param {string} url - url address for fetching with get method
@@ -5,11 +6,10 @@
  */
 module.exports = async function httpGet(url) {
   try {
-    console.log({ url });
-    let response = await fetch(url, { method: 'GET' });
+    let response = await fetch(url, { method: "GET" });
     response = await response.arrayBuffer();
     return response;
   } catch (err) {
-    console.warn('Error: ', err);
+    console.warn("ShotSnap error: ", err);
   }
 };

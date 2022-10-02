@@ -1,7 +1,7 @@
 {
   "name": "shotsnap",
-  "version": "0.1.0",
-  "description": "Node.js web screenshot library with zero dependency",
+  "version": "0.1.1",
+  "description": "Node.js web screenshot library without any webdriver dependency",
   "main": "src/index.js",
   "scripts": {
     "test": "jest"
@@ -27,7 +27,9 @@
     "url": "https://github.com/halitsever/shotsnap/issues"
   },
   "homepage": "https://github.com/halitsever/shotsnap#readme",
-  "engines" : { 
-    "node" : ">=18.0.0"
+  "dependencies": {
+    "buffer": "^6.0.3",
+    "fs": "^0.0.1-security",
+    "node-fetch": "^2.6.7"
   }
 }

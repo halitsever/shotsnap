@@ -3,7 +3,7 @@
 ShotSnap</h1> 
 
 <p align="center">
-Node.js web screenshot library with zero dependency
+Node.js web screenshot library without any webdriver dependency
 <br>
 <b>Usage:</b>
 <br>
