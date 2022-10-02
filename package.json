@@ -1,0 +1,33 @@
+{
+  "name": "shotsnap",
+  "version": "0.0.11",
+  "description": "Node.js web screenshot library with zero dependency",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/halitsever/shotsnap.git"
+  },
+  "keywords": [
+    "screenshot",
+    "ss",
+    "web",
+    "screen",
+    "capture",
+    "shotsnap",
+    "snapshot",
+    "website",
+    "page"
+  ],
+  "author": "Halit Sever <halitsever@protonmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/halitsever/shotsnap/issues"
+  },
+  "homepage": "https://github.com/halitsever/shotsnap#readme",
+  "engines" : { 
+    "node" : ">=18.0.0"
+  }
+}
