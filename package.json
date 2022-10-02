@@ -31,5 +31,8 @@
     "buffer": "^6.0.3",
     "fs": "^0.0.1-security",
     "node-fetch": "^2.6.7"
+  },
+  "devDependencies": {
+    "jest": "^29.1.2"
   }
 }
