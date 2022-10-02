@@ -1,7 +1,12 @@
 {
   "name": "shotsnap",
+<<<<<<< Updated upstream
   "version": "0.1.0",
   "description": "Node.js web screenshot library with zero dependency",
+=======
+  "version": "0.1.3",
+  "description": "Node.js web screenshot library without any webdriver dependency",
+>>>>>>> Stashed changes
   "main": "src/index.js",
   "scripts": {
     "test": "jest"
