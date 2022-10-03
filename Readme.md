@@ -10,7 +10,7 @@ Node.js web screenshot library without any webdriver dependency
 <code align="center">
 const shotSnap = require("shotsnap");</code><br>
 <code align="center">
-shotSnap.takeScreenshot({ pageUrl: 'https://google.com', aveFile: true, fileName: 'test.png' });
+shotSnap.takeScreenshot({ pageUrl: 'https://google.com', saveFile: true, fileName: 'test.png' });
 </code><br><br>
 <b>Result:</b><br>
 <img height="500px" src="https://i.ibb.co/cQtvpqp/screenshot.png">
