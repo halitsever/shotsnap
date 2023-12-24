@@ -71,4 +71,3 @@ For more information you can check the <a href="https://halitsever.github.io/sho
 <p>
   MIT License © 2021 <a href="https://www.github.com/halitsever">Halit Sever</a>
 </p>
-
