@@ -1,6 +1,7 @@
 <p align="center" class="logo-section">
 <img src="https://i.ibb.co/3dMGNbQ/9179fcb5-b9e2-4a34-be0a-80c4318ac199.png"/>
-<h1 align="center">Shotsnap</h1>
+</br>
+<img src="https://halitsever-api.vercel.app/api/repo-title?title=Shotsnap">
 
 <p align="center">
 📷 Node.js web screenshot library with cloud & local browser support<br>
