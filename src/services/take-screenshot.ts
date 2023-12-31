@@ -1,4 +1,4 @@
-import httpGet from "../usecases/httpGet";
+import fetch from "../utils/fetch";
 import fs from "fs/promises";
 import ITakeScreenshot from "../interfaces/ITakeScreenshot";
 /**
@@ -16,10 +16,12 @@ const takeScreenshot = async ({
   saveFile,
   fileName,
 }: ITakeScreenshot) => {
-  const screenshot: ArrayBuffer | undefined = await httpGet(
-    `https://shotsnap.vercel.app/api/screenshot?page=${pageUrl}&width=${
-      screenWidth || 800
-    }&height=${screenHeight || 768}`
+  const screenshot: ArrayBuffer | undefined = await fetch(
+    {
+      url: `https://shotsnap.vercel.app/api/screenshot?page=${pageUrl}&width=${screenWidth || 800
+        }&height=${screenHeight || 768}`,
+      method: "GET"
+    }
   );
   if (saveFile)
     await fs.writeFile(fileName || `shotsnap.png`, Buffer.from(screenshot!));

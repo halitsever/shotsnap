@@ -1,3 +1,3 @@
-import takeScreenshot from "./controllers/takeScreenshot";
+import takeScreenshot from "./services/take-screenshot";
 
 export { takeScreenshot };

@@ -9,7 +9,7 @@
   <a  href="https://www.producthunt.com/posts/shotsnap?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-shotsnap"  target="_blank"><img  src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=361871&theme=light"  alt="Shotsnap - screenshot&#0044;&#0032;web&#0032;capture | Product Hunt"  height="30" /></a>
 <br/><br/>
 <img src="https://img.shields.io/github/sponsors/halitsever"/> 
-  <img src="https://img.shields.io/github/license/halitsever/shotsnap"/> 
+  <img src="https://img.shields.io/github/license/halitsever/shotsnap"/>
 
 </p>
 <p align="center">
@@ -17,7 +17,6 @@
 
   </p>
 </p>
-
 
 <a align="center">
 <img src="https://halitsever-api.vercel.app/api/details"/>
@@ -27,33 +26,29 @@
 - 📝 [**Can run on cloud**](#) - can run on cloud without webdriver
 - 🎨 [**Proxy support**](#) - use your proxies
 
-
-
-
 <a align="center" >
 <img src="https://halitsever-api.vercel.app/api/installation"/>
 </a>
 
+<b>Build</b>
 
+```bash
+npm run build
+```
 
+<b>Test</b>
+
+```bash
+npm run test
+```
+
+<b>Installation:</b>
 
 ```bash
 npm i --save shotsnap
 ```
 
-Also if you don't want use a cloud browser, you can install shotsnap-puppeteer, this version creates a browser locally and uses it.</br></br>
-
-
-```bash
-npm i --save shotsnap-puppeteer
-```
-
-Cloud browser has some limitations, its public and when a ip banned from a site its mean you cannot access again this website with that cloud browser, that kind of situations you can use local browser.
-
 For more information you can check the <a href="https://halitsever.github.io/shotsnap/">documentation</a> page
-  
-
-
 
 <a align="center" href="https://github.com/halitsever/shotsnap/issues">
 <img src="https://halitsever-api.vercel.app/api/issue"/>
@@ -62,7 +57,6 @@ For more information you can check the <a href="https://halitsever.github.io/sho
 <a align="center">
 <img src="https://halitsever-api.vercel.app/api/sponsor"/>
 </a>
-
 
 <a align="center">
 <img src="https://halitsever-api.vercel.app/api/license"/>
