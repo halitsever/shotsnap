@@ -1,6 +1,6 @@
 {
   "name": "shotsnap",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Node.js web screenshot library without any webdriver dependency",
   "main": "build/src/index.js",
   "scripts": {
