@@ -1,11 +1,11 @@
 import nodeFetch from "node-fetch";
-import IFetch from "../interfaces/IFetch";
+import IFetchOptions from "../interfaces/IFetchOptions";
 /**
  *
  * @param {string} url - url address for fetching with get method
  * @returns { arrayBuffer }
  */
-const fetch = async ({ url, method }: IFetch) => {
+const fetch = async ({ url, method }: IFetchOptions) => {
   try {
     const response = await nodeFetch(url, { method });
     const arrayBuffer: ArrayBuffer = await response.arrayBuffer();
