@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "Shotsnap Documentation"
   text: "Node.js web screenshot library"
-  tagline: 1.0.0
+  tagline: 0.2.2
   actions:
     - theme: brand
       text: 🐢 Get Started
