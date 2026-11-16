@@ -34,7 +34,7 @@
   "dependencies": {
     "@types/node": "^18.14.1",
     "node-fetch": "^2.6.9",
-    "prettier": "^2.8.4"
+    "prettier": "^3.10.1"
   },
   "devDependencies": {
     "@babel/preset-typescript": "^7.21.0",
