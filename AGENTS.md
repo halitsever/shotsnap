@@ -19,7 +19,6 @@ CI (`.github/workflows/ci.yml`) runs these on the latest Node LTS:
 - `docs/.vitepress/cache` is committed. The build leaves it alone, but the VitePress dev server rewrites it, so keep those changes out of commits.
 - The docs and the README mention `shotsnap-puppeteer` for a local browser. That package is not on npm or GitHub, so don't point users to it.
 - `generated.txt` was written by an old GitHub Actions job (commits named "Builded by GH Actions", last one in 2023). Nothing writes it now.
-- The root `SECURITY.md` is GitHub's unedited placeholder. The real policy is `.github/SECURITY.md`.
 - Publishing runs when a GitHub release is created: `npm ci && npm run build`, then `npm publish` with the `NPM_TOKEN` secret.
 
 ## Docs site
