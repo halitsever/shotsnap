@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 const siteUrl = 'https://halitsever.github.io/shotsnap/'
 const title = 'Shotsnap'
-const description = 'Shotsnap is a Node.js library that takes website screenshots from a URL through a cloud browser, or a local one with shotsnap-puppeteer.'
+const description = 'Shotsnap is a Node.js library that takes website screenshots from a URL through a hosted cloud browser and returns them as a Buffer.'
 
 const jsonLd = {
   '@context': 'https://schema.org',

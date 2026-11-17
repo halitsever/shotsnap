@@ -1,7 +1,7 @@
 {
   "name": "shotsnap",
   "version": "0.2.2",
-  "description": "Node.js web screenshot library with cloud & local browser support",
+  "description": "Node.js website screenshot library that captures a URL through a hosted cloud browser and returns the image as a Buffer.",
   "main": "build/src/index.js",
   "scripts": {
     "test": "jest",
