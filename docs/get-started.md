@@ -9,10 +9,6 @@ description: "Install shotsnap to take website screenshots in Node.js through a 
 npm i --save shotsnap
 ```
 
-Also if you don't want use a cloud browser, you can install shotsnap-puppeteer, this version creates a browser locally and uses it.
+Every screenshot is taken by a public cloud browser at shotsnap.vercel.app, so you don't need a browser or webdriver on your machine.
 
-```bash
-npm i --save shotsnap-puppeteer
-```
-
-Cloud browser has some limitations, its public and when a ip banned from a site its mean you cannot access again this website with that cloud browser, that kind of situations you can use local browser.
+The cloud browser has some limits: it can rate-limit heavy use, and a site that blocks its IP address can't be captured with it.

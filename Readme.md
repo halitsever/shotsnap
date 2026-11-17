@@ -22,9 +22,7 @@
 <img src="https://halitsever-api.vercel.app/api/details"/>
 </a>
 
-- 🧑‍💻 [**Can run on local**](#) - can run on local with webdriver
 - 📝 [**Can run on cloud**](#) - can run on cloud without webdriver
-- 🎨 [**Proxy support**](#) - use your proxies
 
 <a align="center" >
 <img src="https://halitsever-api.vercel.app/api/installation"/>
