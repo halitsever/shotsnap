@@ -19,9 +19,6 @@ features:
   - icon: ☁️
     title: Can run on cloud
     details: You don't need webdriver for taking screenshots on web
-  - icon: 🛠️
-    title: Can run on local
-    details: It can also run on local with webdriver via puppeteer
   - icon: 📸
     title: Simple
     details: Simple & small package for taking screenshot on websites

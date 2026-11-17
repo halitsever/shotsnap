@@ -17,9 +17,8 @@ CI (`.github/workflows/ci.yml`) runs these on the latest Node LTS:
 - `npm run build` writes `build/` (package `main` is `build/src/index.js`), and `.gitignore` does not cover it. Keep it out of commits.
 - Both `package-lock.json` and `yarn.lock` are committed. CI and publishing use `npm ci`. When dependencies change, update both, as the last deps fix did.
 - `docs/.vitepress/cache` is committed. The build leaves it alone, but the VitePress dev server rewrites it, so keep those changes out of commits.
-- The docs and the README mention `shotsnap-puppeteer` for a local browser. That package is not on npm or GitHub, so don't point users to it.
+- Every screenshot goes through the hosted API. There is no local browser or proxy mode, and `shotsnap-puppeteer` does not exist, so don't document either.
 - `generated.txt` was written by an old GitHub Actions job (commits named "Builded by GH Actions", last one in 2023). Nothing writes it now.
-- The root `SECURITY.md` is GitHub's unedited placeholder. The real policy is `.github/SECURITY.md`.
 - Publishing runs when a GitHub release is created: `npm ci && npm run build`, then `npm publish` with the `NPM_TOKEN` secret.
 
 ## Docs site

@@ -21,7 +21,7 @@ shotSnap.takeScreenshot({
 
 **How it works?**
 When you run this code this requests going to browser on cloud, its creates a new browser instance and take a screenshot.
-If you make too much request you can be ratelimited. Thats why if you have high usage you should use `shotsnap-puppeteer` package.
+If you make too many requests you can be rate-limited.
 
 ```
 
