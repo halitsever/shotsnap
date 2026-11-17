@@ -1,3 +1,8 @@
+---
+title: Taking Screenshot From A Website
+description: "Take a screenshot of a website from its URL in Node.js with shotsnap and save it to a PNG file."
+---
+
 **Simple example**
 
 ```javascript
