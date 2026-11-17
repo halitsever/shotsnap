@@ -1,3 +1,8 @@
+---
+title: Getting Started
+description: "Install shotsnap to take website screenshots in Node.js through a hosted cloud browser."
+---
+
 **Installation**
 
 ```bash

@@ -1,0 +1,17 @@
+# Shotsnap
+
+> Node.js library that takes a screenshot of a website from its URL through a hosted cloud browser and returns the image as a Buffer.
+
+Install with `npm i --save shotsnap`. `takeScreenshot({ pageUrl, saveFile, fileName, screenWidth, screenHeight })` returns a Promise of a Buffer. The screen defaults to 800x768, and with `saveFile: true` the image is written to `fileName` (default `shotsnap.png`). Every call goes to the public API at shotsnap.vercel.app, which can rate-limit heavy use.
+
+## Docs
+
+- [Home](https://halitsever.github.io/shotsnap/): overview
+- [Getting Started](https://halitsever.github.io/shotsnap/get-started.html): installation and cloud browser limits
+- [Taking Screenshot From A Website](https://halitsever.github.io/shotsnap/taking-screenshot.html): a full example and how the cloud browser works
+- [Props](https://halitsever.github.io/shotsnap/props.html): pageUrl, saveFile, fileName, screenWidth and screenHeight
+
+## Optional
+
+- [Source](https://github.com/halitsever/shotsnap): repository
+- [npm](https://www.npmjs.com/package/shotsnap): package page
