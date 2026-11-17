@@ -17,7 +17,7 @@ updates:
     ignore:
       # ts-jest supports TypeScript below 7 only.
       - dependency-name: typescript
-        update-types: ["version-update:semver-major"]
+        versions: [">=7"]
       # Babel 8 needs @babel/core 8 and a babel config migration.
       - dependency-name: "@babel/*"
         update-types: ["version-update:semver-major"]
