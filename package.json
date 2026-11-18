@@ -1,7 +1,7 @@
 {
   "name": "shotsnap",
   "version": "0.2.2",
-  "description": "Node.js website screenshot library that captures a URL through a hosted cloud browser and returns the image as a Buffer.",
+  "description": "Website screenshot API for Node.js: screenshot a URL through a hosted cloud browser and get the PNG back as a Buffer, no Puppeteer or Chrome needed.",
   "main": "build/src/index.js",
   "scripts": {
     "test": "jest",
@@ -19,6 +19,9 @@
     "website-screenshot",
     "webpage-screenshot",
     "screenshot-api",
+    "website-screenshot-api",
+    "screenshot-url",
+    "puppeteer-alternative",
     "url-to-image",
     "url-screenshot",
     "web-capture",
