@@ -58,7 +58,7 @@ export default defineConfig({
         ]
       }
     ],
-    logo: '/favicon.svg',
+    logo: { src: '/favicon.svg', alt: 'Shotsnap logo' },
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
