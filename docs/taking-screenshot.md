@@ -27,7 +27,7 @@ If you make too many requests you can be rate-limited.
 
 ## Calling the website screenshot API over HTTP
 
-`takeScreenshot` is a thin wrapper around a public endpoint, so any language that can send a GET request can use it:
+`takeScreenshot` is a thin wrapper around a public endpoint, so any language that can send a GET request can turn a URL into a screenshot:
 
 ```bash
 curl -o example.png "https://shotsnap.vercel.app/api/screenshot?page=https://example.com&width=800&height=768"
