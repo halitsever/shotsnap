@@ -4,7 +4,7 @@
 <img src="https://halitsever-api.vercel.app/api/repo-title?title=Shotsnap">
 
 <p align="center">
-📷 Node.js library that takes a website screenshot from a URL through a hosted cloud browser and returns it as a Buffer<br>
+📷 Website screenshot API for Node.js: screenshot a URL through a hosted cloud browser and get the image back as a Buffer<br>
 <br/>
   <a  href="https://www.producthunt.com/posts/shotsnap?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-shotsnap"  target="_blank"><img  src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=361871&theme=light"  alt="Shotsnap - screenshot&#0044;&#0032;web&#0032;capture | Product Hunt"  height="30" /></a>
 <br/><br/>
@@ -23,6 +23,7 @@
 </a>
 
 - 📝 [**Can run on cloud**](#) - can run on cloud without webdriver
+- [**Puppeteer screenshot vs shotsnap**](https://halitsever.github.io/shotsnap/puppeteer-screenshot.html) - Puppeteer code next to shotsnap code, and when each one fits
 
 <a align="center" >
 <img src="https://halitsever-api.vercel.app/api/installation"/>

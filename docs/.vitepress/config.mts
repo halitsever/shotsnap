@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 const siteUrl = 'https://halitsever.github.io/shotsnap/'
 const title = 'Shotsnap'
-const description = 'Shotsnap is a Node.js library that takes website screenshots from a URL through a hosted cloud browser and returns them as a Buffer.'
+const description = 'Shotsnap is a website screenshot API for Node.js: it captures a URL through a hosted cloud browser and returns the image as a Buffer.'
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -52,8 +52,9 @@ export default defineConfig({
         text: 'Docs',
         items: [
           { text: 'Getting Started', link: '/get-started' },
-          { text: 'Taking Screenshot From A Website', link: '/taking-screenshot' },
+          { text: 'Screenshot a URL in Node.js', link: '/taking-screenshot' },
           { text: 'Props', link: '/props' },
+          { text: 'Puppeteer Screenshot vs Shotsnap', link: '/puppeteer-screenshot' },
         ]
       }
     ],
