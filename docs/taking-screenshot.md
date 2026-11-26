@@ -19,7 +19,7 @@ shotSnap.takeScreenshot({
 ```
 
 **Result:**
-<img src="https://i.ibb.co/W6JKvnz/screenshot-1.png" style="border-radius:20px;"/>
+<img src="https://i.ibb.co/W6JKvnz/screenshot-1.png" alt="Screenshot of the Google homepage captured by shotsnap from https://google.com" style="border-radius:20px;"/>
 
 **How it works?**
 When you run this code this requests going to browser on cloud, its creates a new browser instance and take a screenshot.
