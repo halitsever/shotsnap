@@ -23,6 +23,8 @@ export default defineConfig({
   title,
   description,
   head: [
+    /** Cloudflare Web Analytics, one token for every page on halitsever.github.io. */
+    ['script', { defer: '', src: 'https://static.cloudflareinsights.com/beacon.min.js', 'data-cf-beacon': '{"token": "dd7e54d3f48841c187d72d9dbb92a6b6"}' }],
     ['link', { rel: 'icon', href: '/shotsnap/favicon.svg' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:title', content: title }],
