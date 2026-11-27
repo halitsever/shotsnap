@@ -1,6 +1,6 @@
 import { defineConfig } from 'vitepress'
 
-const siteUrl = 'https://halitsever.github.io/shotsnap/'
+const siteUrl = 'https://projects.halit.org/shotsnap/'
 const title = 'Shotsnap'
 const description = 'Shotsnap is a website screenshot API for Node.js: it captures a URL through a hosted cloud browser and returns the image as a Buffer.'
 
@@ -25,7 +25,7 @@ export default defineConfig({
   title,
   description,
   head: [
-    /** Cloudflare Web Analytics, one token for every page on halitsever.github.io. */
+    /** Cloudflare Web Analytics, one token for every page on projects.halit.org. */
     ['script', { defer: '', src: 'https://static.cloudflareinsights.com/beacon.min.js', 'data-cf-beacon': '{"token": "dd7e54d3f48841c187d72d9dbb92a6b6"}' }],
     ['link', { rel: 'icon', href: '/shotsnap/favicon.svg' }],
     ['meta', { property: 'og:type', content: 'website' }],
