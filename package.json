@@ -37,7 +37,7 @@
   "bugs": {
     "url": "https://github.com/halitsever/shotsnap/issues"
   },
-  "homepage": "https://halitsever.github.io/shotsnap/",
+  "homepage": "https://projects.halit.org/shotsnap/",
   "dependencies": {
     "@types/node": "^26.6.6",
     "node-fetch": "^2.6.9",

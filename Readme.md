@@ -13,7 +13,7 @@ Website screenshot API for Node.js: screenshot a URL through a hosted cloud brow
 
 </p>
 <p align="center">
-<a align="center" href="https://halitsever.github.io/shotsnap/">Documentation</a> | <a href="https://halitsever.github.io/shotsnap/">Website</a>
+<a align="center" href="https://projects.halit.org/shotsnap/">Documentation</a> | <a href="https://projects.halit.org/shotsnap/">Website</a>
 
   </p>
 </p>
@@ -23,7 +23,7 @@ Website screenshot API for Node.js: screenshot a URL through a hosted cloud brow
 </a>
 
 - [**Can run on cloud**](#) - can run on cloud without webdriver
-- [**Puppeteer screenshot vs shotsnap**](https://halitsever.github.io/shotsnap/puppeteer-screenshot.html) - Puppeteer code next to shotsnap code, and when each one fits
+- [**Puppeteer screenshot vs shotsnap**](https://projects.halit.org/shotsnap/puppeteer-screenshot.html) - Puppeteer code next to shotsnap code, and when each one fits
 
 <a align="center" >
 <img src="https://halitsever-api.vercel.app/api/installation"/>
@@ -47,7 +47,7 @@ npm run test
 npm i --save shotsnap
 ```
 
-For more information you can check the <a href="https://halitsever.github.io/shotsnap/">documentation</a> page
+For more information you can check the <a href="https://projects.halit.org/shotsnap/">documentation</a> page
 
 <a align="center" href="https://github.com/halitsever/shotsnap/issues">
 <img src="https://halitsever-api.vercel.app/api/issue"/>

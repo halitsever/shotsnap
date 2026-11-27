@@ -6,11 +6,11 @@ Install with `npm i --save shotsnap`. `takeScreenshot({ pageUrl, saveFile, fileN
 
 ## Docs
 
-- [Home](https://halitsever.github.io/shotsnap/): overview
-- [Getting Started](https://halitsever.github.io/shotsnap/get-started.html): installation and cloud browser limits
-- [Take a Screenshot of a URL in Node.js](https://halitsever.github.io/shotsnap/taking-screenshot.html): a full example, how the cloud browser works and the HTTP endpoint
-- [Props](https://halitsever.github.io/shotsnap/props.html): pageUrl, saveFile, fileName, screenWidth and screenHeight
-- [Puppeteer Screenshot vs Shotsnap](https://halitsever.github.io/shotsnap/puppeteer-screenshot.html): Puppeteer code next to shotsnap code and when to use each
+- [Home](https://projects.halit.org/shotsnap/): overview
+- [Getting Started](https://projects.halit.org/shotsnap/get-started.html): installation and cloud browser limits
+- [Take a Screenshot of a URL in Node.js](https://projects.halit.org/shotsnap/taking-screenshot.html): a full example, how the cloud browser works and the HTTP endpoint
+- [Props](https://projects.halit.org/shotsnap/props.html): pageUrl, saveFile, fileName, screenWidth and screenHeight
+- [Puppeteer Screenshot vs Shotsnap](https://projects.halit.org/shotsnap/puppeteer-screenshot.html): Puppeteer code next to shotsnap code and when to use each
 
 ## Optional
 
