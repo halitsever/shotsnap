@@ -77,13 +77,12 @@ If the pages are public and the volume is small, the function can fetch an image
 import { takeScreenshot } from 'shotsnap'
 
 export const handler = async (event) => {
-  const png = await takeScreenshot({ pageUrl: encodeURIComponent(event.url), screenWidth: 1200, screenHeight: 630 })
-  if (png.subarray(0, 4).toString('hex') !== '89504e47') throw new Error(png.toString('utf8', 0, 200))
+  const png = await takeScreenshot({ pageUrl: event.url, screenWidth: 1200, screenHeight: 630 })
   return { statusCode: 200, headers: { 'Content-Type': 'image/png' }, isBase64Encoded: true, body: png.toString('base64') }
 }
 ```
 
-Two details in that code come from the library's source: it does not encode `pageUrl`, so encode URLs that have their own query string, and it does not check the HTTP status, so the PNG signature check catches an error body (such as a 429) before it is returned as an image.
+The library encodes `pageUrl`, so URLs with their own query string need no extra step. When the endpoint answers with an error such as a 429, `takeScreenshot` rejects with a `ShotsnapError` that has the HTTP `status`, so the function fails instead of returning an error body as an image. Version 0.2.2 and earlier did neither, and needed `encodeURIComponent` and a PNG signature check here.
 
 The limits are real: the endpoint allows 7 requests per 10 minutes per IP address, then HTTP 429, which is about 1,000 a day, and Lambda's outbound IP addresses are assigned by AWS, so you cannot count on having that quota to yourself. It captures the viewport only, at twice the size you ask for. It is a free shared service with no uptime guarantee. See the [free screenshot API](/free-screenshot-api/) page for details, and use option 1 or 2 for anything production-critical.
 

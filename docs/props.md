@@ -19,14 +19,16 @@ description: "Options of shotsnap takeScreenshot: page URL, screen width and hei
 
 The address of the page to capture, including the protocol, such as `https://example.com`. The hosted browser loads it, so it has to be reachable from the public internet.
 
-Shotsnap places the value into the request URL without encoding it. If the page URL has a query string of its own, pass it through `encodeURIComponent` first so its `&` and `=` characters are not read as parameters of the screenshot request:
+Shotsnap encodes the value with `encodeURIComponent` before it goes into the request URL, so a page URL with a query string of its own works as is:
 
 ```javascript
 takeScreenshot({
-  pageUrl: encodeURIComponent("https://example.com/search?q=shoes&page=2"),
+  pageUrl: "https://example.com/search?q=shoes&page=2",
   saveFile: false,
 });
 ```
+
+A value that is already encoded, one that starts with `https%3A` or `http%3A`, is sent unchanged, so code written for version 0.2.2, which did not encode the value, keeps working.
 
 ## saveFile and fileName
 

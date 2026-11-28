@@ -80,17 +80,20 @@ We ran it against a local Express server that answered 429 twice, first with `Re
 
 ## Using the shotsnap npm package
 
-The [shotsnap](/) package (0.2.2) does not check the status code. We called `takeScreenshot` with `saveFile: true` while rate limited: it returned a 75-byte Buffer holding the text `Too Many Requests` and wrote that to the PNG file. Until that changes, check the result yourself:
+The [shotsnap](/) package checks the status code. While rate limited, `takeScreenshot` rejects with a `ShotsnapError` whose message is `Screenshot API answered HTTP 429 Too Many Requests`, and with `saveFile: true` it writes nothing. The error has the `status` and the raw `retryAfter` header, which is `null` on this endpoint:
 
 ```js
-import { takeScreenshot } from 'shotsnap'
+import { takeScreenshot, ShotsnapError } from 'shotsnap'
 
-const image = await takeScreenshot({ pageUrl: 'https://example.com', saveFile: false })
-const isPng = image.subarray(0, 8).equals(Buffer.from([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a]))
-if (!isPng) throw new Error(`No image: ${image.toString().split('\n')[0]}`)
+try {
+  await takeScreenshot({ pageUrl: 'https://example.com', saveFile: true, fileName: 'example.png' })
+} catch (error) {
+  if (!(error instanceof ShotsnapError) || error.status !== 429) throw error
+  // No Retry-After here, so wait out the 10 minute window.
+}
 ```
 
-Every PNG file starts with those eight bytes, so the check is cheap and reliable.
+Version 0.2.2 did not check it. We called `takeScreenshot` with `saveFile: true` while rate limited: it returned a 75-byte Buffer holding the text `Too Many Requests` and wrote that to the PNG file. On that version, check that the result starts with the PNG signature, the bytes `89 50 4E 47 0D 0A 1A 0A`.
 
 ## Fixing it as a server owner
 
