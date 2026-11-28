@@ -2,13 +2,13 @@
 title: "WordPress mShots API: Free Website Thumbnails"
 titleTemplate: false
 description: "How the s.wordpress.com/mshots/v1 screenshot URL works: the w, h, vpw and vph parameters, the placeholder image, the 24-hour refresh and its limits."
-headline: "WordPress mShots API: free website thumbnails"
+headline: "How the WordPress mShots API makes free website thumbnails"
 date: "2026-11-28"
 keyword: "s.wordpress.com/mshots/v1 screenshot api"
 faq: [{"q": "Is the WordPress mShots API free to use?", "a": "It is free to request, but it has no published terms or quota for use outside WordPress.com, and it can refuse automated traffic."}, {"q": "Why does mShots return a placeholder image?", "a": "The first request for a URL queues a capture and redirects to a default image. Request the same URL again a few seconds later to get the screenshot."}]
 ---
 
-# WordPress mShots API: free website thumbnails
+# How the WordPress mShots API makes free website thumbnails
 
 <p class="post-meta">By <a href="https://halit.org">Halit Sever</a> · <time datetime="2026-11-28">28 November 2026</time></p>
 

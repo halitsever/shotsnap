@@ -2,13 +2,13 @@
 title: "chrome-headless-shell: What It Is and When to Use It"
 titleTemplate: false
 description: "chrome-headless-shell is Chrome's old headless mode as a separate binary. Why it was split out, how to install it, and how Puppeteer and Playwright use it."
-headline: "chrome-headless-shell: what it is and when to use it"
+headline: "chrome-headless-shell explained: the lighter headless Chrome"
 date: "2026-11-28"
 keyword: "chrome headless shell"
 faq: [{"q": "What is chrome-headless-shell?", "a": "It is Chrome's old headless mode, published as a standalone binary through Chrome for Testing since Chrome 120. Since Chrome 132 it is the only way to get the old mode."}, {"q": "How do I use chrome-headless-shell with Puppeteer?", "a": "Launch with headless: 'shell'. Puppeteer's default, headless: true, uses the new headless Chrome."}]
 ---
 
-# chrome-headless-shell: what it is and when to use it
+# chrome-headless-shell explained: the lighter headless Chrome
 
 <p class="post-meta">By <a href="https://halit.org">Halit Sever</a> · <time datetime="2026-11-28">28 November 2026</time></p>
 

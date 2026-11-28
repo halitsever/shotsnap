@@ -2,13 +2,13 @@
 title: "HTML to Image in Node.js: Three Approaches"
 titleTemplate: false
 description: "Turn HTML into a PNG: DOM-to-canvas libraries in the browser, headless Chrome with Puppeteer or Playwright in Node.js, or a hosted URL screenshot."
-headline: "HTML to image in Node.js: three approaches"
+headline: "Three ways to convert HTML to an image in Node.js"
 date: "2026-11-28"
 keyword: "html to image"
 faq: [{"q": "How do I convert HTML to an image in Node.js?", "a": "Load the HTML into headless Chrome with Puppeteer or Playwright using page.setContent, then call page.screenshot. Browser libraries such as html2canvas need a DOM and do not run in Node.js on their own."}, {"q": "Can Shotsnap render an HTML string?", "a": "No. Shotsnap captures public URLs. For HTML strings, use a headless browser with setContent."}]
 ---
 
-# HTML to image in Node.js: three approaches
+# Three ways to convert HTML to an image in Node.js
 
 <p class="post-meta">By <a href="https://halit.org">Halit Sever</a> · <time datetime="2026-11-28">28 November 2026</time></p>
 

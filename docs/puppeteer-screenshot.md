@@ -3,7 +3,7 @@ title: Puppeteer Screenshot vs a Hosted Screenshot API
 description: "How to take a screenshot with Puppeteer in Node.js, the same capture with the shotsnap screenshot API, and when each one is the better fit."
 ---
 
-# Puppeteer screenshot vs a hosted screenshot API
+# Should you use Puppeteer or a hosted screenshot API?
 
 Puppeteer is the usual way to take a website screenshot in Node.js: it starts a real Chrome, loads the page and saves an image. Shotsnap sends the URL to a hosted browser instead and gets a PNG back over HTTP. Both give you an image of the page. They differ in where the browser runs and how much of it you control.
 

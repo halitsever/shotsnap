@@ -3,7 +3,7 @@ title: Getting Started
 description: "Install shotsnap to take website screenshots in Node.js through a hosted cloud browser."
 ---
 
-# Getting started
+# Getting started with shotsnap
 
 Shotsnap takes a screenshot of a web page from Node.js and gives it back to you as a `Buffer`. You pass a URL, a hosted browser loads the page, and the image comes back over HTTP. This page covers installing the package, taking a first screenshot and handling the cases where a capture fails.
 
