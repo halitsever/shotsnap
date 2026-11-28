@@ -3,7 +3,7 @@ title: Take a Screenshot of a URL in Node.js
 description: "Take a screenshot of a website from its URL in Node.js with shotsnap, save it to a PNG file, or call the website screenshot API over HTTP."
 ---
 
-# Take a screenshot of a URL in Node.js
+# Screenshot a URL from Node.js with shotsnap
 
 **Simple example**
 

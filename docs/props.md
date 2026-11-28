@@ -3,7 +3,7 @@ title: Props
 description: "Options of shotsnap takeScreenshot: page URL, screen width and height, saving to a file and the file name."
 ---
 
-# Props
+# Props for takeScreenshot
 
 `takeScreenshot` takes a single options object and returns a `Promise` that resolves to a `Buffer` holding the image. These are all the options it reads.
 
