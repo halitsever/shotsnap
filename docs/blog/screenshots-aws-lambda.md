@@ -102,4 +102,5 @@ Yes, with a serverless Chromium build such as @sparticuz/chromium in a .zip pack
 - [thum.io screenshot API: URL format and free alternatives](/blog/thum-io-alternative)
 - [HTML to image in Node.js: three approaches](/blog/html-to-image-nodejs)
 - [chrome-headless-shell: what it is and when to use it](/blog/chrome-headless-shell)
+- [HTTP 429 Too Many Requests, from both sides of the limit](/blog/http-429-too-many-requests)
 - [All posts](/blog/)
