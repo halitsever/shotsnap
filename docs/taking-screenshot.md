@@ -23,7 +23,7 @@ shotSnap.takeScreenshot({
 
 **How it works?**
 When you run this code this requests going to browser on cloud, its creates a new browser instance and take a screenshot.
-If you make too many requests you can be rate-limited.
+The endpoint allows 7 requests per 10 minutes per IP address and answers HTTP 429 after that.
 
 ## Calling the website screenshot API over HTTP
 
@@ -39,6 +39,6 @@ curl -o example.png "https://shotsnap.vercel.app/api/screenshot?page=https://exa
 | `width` | Viewport width in pixels. The Node.js library sends 800 when you leave it out. |
 | `height` | Viewport height in pixels. The Node.js library sends 768 when you leave it out. |
 
-The response is a PNG. It carries a one-day cache header, so the same URL and size can come back as a cached image.
+The response is a PNG at twice the requested viewport. It carries a one-day cache header, so the same URL and size can come back as a cached image. The [free screenshot API](/free-screenshot-api/) page has a live URL builder, the rate limit and snippets for curl, JavaScript and Python.
 
 Comparing this with running a browser yourself? See [Puppeteer screenshot vs a hosted screenshot API](/puppeteer-screenshot).

@@ -21,7 +21,7 @@ npm i --save shotsnap
 
 Every screenshot is taken by a public cloud browser at shotsnap.vercel.app, so you don't need a browser or webdriver on your machine.
 
-The cloud browser has some limits: it can rate-limit heavy use, and a site that blocks its IP address can't be captured with it.
+The cloud browser has some limits: it allows 7 requests per 10 minutes per IP address and answers HTTP 429 after that, it has no uptime guarantee, and a site that blocks its IP address can't be captured with it. See the [free screenshot API](/free-screenshot-api/) page for the exact rules.
 
 ## Your first screenshot
 
