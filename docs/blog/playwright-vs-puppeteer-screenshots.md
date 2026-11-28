@@ -105,4 +105,6 @@ Call page.screenshot({ path: 'full.png', fullPage: true }), or run npx playwrigh
 - [HTML to image in Node.js: three approaches](/blog/html-to-image-nodejs)
 - [Selenium with headless Chrome: screenshots that work](/blog/selenium-headless-chrome-screenshot)
 - [chrome-headless-shell: what it is and when to use it](/blog/chrome-headless-shell)
+- [Choosing a Puppeteer waitUntil value before a screenshot](/blog/puppeteer-waituntil)
+- [PNG or WebP for website screenshots? We measured both](/blog/webp-vs-png)
 - [All posts](/blog/)

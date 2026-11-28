@@ -105,4 +105,5 @@ No. Shotsnap captures public URLs. For HTML strings, use a headless browser with
 - [What is headless Chrome, and do you need it for screenshots?](/blog/what-is-headless-chrome)
 - [Playwright vs Puppeteer for screenshots](/blog/playwright-vs-puppeteer-screenshots)
 - [Website screenshots on AWS Lambda without bundling Chrome](/blog/screenshots-aws-lambda)
+- [Generating Open Graph images from HTML with a headless browser](/blog/og-image-generator)
 - [All posts](/blog/)

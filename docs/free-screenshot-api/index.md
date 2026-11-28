@@ -67,7 +67,7 @@ What we measured on 28 November 2026:
 curl -f -o example.png "https://shotsnap.vercel.app/api/screenshot?page=https%3A%2F%2Fexample.com&width=1280&height=720"
 ```
 
-`-f` makes curl fail on a 429 instead of saving the error text as `example.png`.
+`-f` makes curl fail on a 429 instead of saving the error text as `example.png`. [HTTP 429 Too Many Requests](/blog/http-429-too-many-requests) shows a retry helper and what the 429 response contains.
 
 **JavaScript (Node.js 18+):**
 

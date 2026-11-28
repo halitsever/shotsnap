@@ -1,7 +1,7 @@
 ---
 title: "Website Screenshot Guides for Node.js | Shotsnap"
 titleTemplate: false
-description: "Guides to website screenshots from code: headless Chrome, Selenium, Playwright vs Puppeteer, HTML to image, serverless, thum.io and WordPress mShots."
+description: "Guides to website screenshots from code: headless Chrome, Puppeteer waitUntil, WebP vs PNG, OG images, 429 rate limits, serverless, thum.io and mShots."
 ---
 
 # Shotsnap blog
@@ -39,3 +39,27 @@ chrome-headless-shell is Chrome's old headless mode as a separate binary. Why it
 ## [Website screenshots on AWS Lambda without bundling Chrome](/blog/screenshots-aws-lambda)
 
 Why headless Chrome is hard on AWS Lambda: the 250 MB package limit, @sparticuz/chromium, container images, and calling a hosted screenshot URL instead.
+
+## [HTTP 429 Too Many Requests, from both sides of the limit](/blog/http-429-too-many-requests)
+
+What HTTP 429 Too Many Requests means, why a server sends it, how to retry without making it worse, and how to handle it when calling a screenshot API.
+
+## [Reading and sending the Retry-After HTTP header](/blog/retry-after-header)
+
+How the Retry-After header works with 429, 503 and redirects: its two formats, how to parse both in JavaScript, and what to do when a server leaves it out.
+
+## [PNG or WebP for website screenshots? We measured both](/blog/webp-vs-png)
+
+PNG vs WebP vs JPEG for website screenshots, measured with Puppeteer on three pages: file sizes, transparency, lossless WebP and which format to pick.
+
+## [Choosing a Puppeteer waitUntil value before a screenshot](/blog/puppeteer-waituntil)
+
+What Puppeteer's waitUntil values load, domcontentloaded, networkidle0 and networkidle2 wait for, measured on a test page, and how to wait for the content.
+
+## [Generating Open Graph images from HTML with a headless browser](/blog/og-image-generator)
+
+Build your own OG image generator: an HTML template rendered at 1200x630 with Puppeteer, the og:image meta tags to add, and when a URL screenshot is enough.
+
+## [What size an og:image should be, and why 1200x630](/blog/open-graph-image-size)
+
+The Open Graph image size to use, from Meta's sharing docs: 1200x630 for sharp previews, 600x315 at minimum, a 1.91:1 ratio, 8 MB at most, and the meta tags.

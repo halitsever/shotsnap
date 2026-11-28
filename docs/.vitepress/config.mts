@@ -128,6 +128,12 @@ export default defineConfig({
           { text: 'Playwright vs Puppeteer', link: '/blog/playwright-vs-puppeteer-screenshots' },
           { text: 'chrome-headless-shell', link: '/blog/chrome-headless-shell' },
           { text: 'Screenshots on AWS Lambda', link: '/blog/screenshots-aws-lambda' },
+          { text: '429 Too Many Requests', link: '/blog/http-429-too-many-requests' },
+          { text: 'Retry-After header', link: '/blog/retry-after-header' },
+          { text: 'WebP vs PNG', link: '/blog/webp-vs-png' },
+          { text: 'Puppeteer waitUntil', link: '/blog/puppeteer-waituntil' },
+          { text: 'OG image generator', link: '/blog/og-image-generator' },
+          { text: 'Open Graph image size', link: '/blog/open-graph-image-size' },
         ]
       }
     ],
