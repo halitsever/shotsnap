@@ -2,7 +2,7 @@
 
 > Website screenshot API for Node.js: takes a screenshot of a website from its URL through a hosted cloud browser and returns the image as a Buffer.
 
-Install with `npm i --save shotsnap`. `takeScreenshot({ pageUrl, saveFile, fileName, screenWidth, screenHeight })` returns a Promise of a Buffer. The screen defaults to 800x768, and with `saveFile: true` the image is written to `fileName` (default `shotsnap.png`). Every call goes to the public API at shotsnap.vercel.app, which can rate-limit heavy use.
+Install with `npm i --save shotsnap`. `takeScreenshot({ pageUrl, saveFile, fileName, screenWidth, screenHeight })` returns a Promise of a Buffer. The screen defaults to 800x768, and with `saveFile: true` the image is written to `fileName` (default `shotsnap.png`). Every call goes to the free public endpoint at shotsnap.vercel.app, which allows 7 requests per 10 minutes per IP address (about 1,000 a day) and answers HTTP 429 after that, with no uptime guarantee.
 
 ## Docs
 
@@ -11,6 +11,19 @@ Install with `npm i --save shotsnap`. `takeScreenshot({ pageUrl, saveFile, fileN
 - [Take a Screenshot of a URL in Node.js](https://projects.halit.org/shotsnap/taking-screenshot.html): a full example, how the cloud browser works and the HTTP endpoint
 - [Props](https://projects.halit.org/shotsnap/props.html): pageUrl, saveFile, fileName, screenWidth and screenHeight
 - [Puppeteer Screenshot vs Shotsnap](https://projects.halit.org/shotsnap/puppeteer-screenshot.html): Puppeteer code next to shotsnap code and when to use each
+- [Free Screenshot API](https://projects.halit.org/shotsnap/free-screenshot-api/): the endpoint's parameters, rate limit, live URL builder and curl, JavaScript and Python snippets
+
+## Blog
+
+- [All posts](https://projects.halit.org/shotsnap/blog/)
+- [thum.io screenshot API: URL format and free alternatives](https://projects.halit.org/shotsnap/blog/thum-io-alternative.html): How image.thum.io screenshot URLs work, its options, plans and free allowance, and how it compares with Shotsnap's endpoint and running a browser yourself.
+- [WordPress mShots API: free website thumbnails](https://projects.halit.org/shotsnap/blog/wordpress-mshots-api.html): How the s.wordpress.com/mshots/v1 screenshot URL works: the w, h, vpw and vph parameters, the placeholder image, the 24-hour refresh and its limits.
+- [HTML to image in Node.js: three approaches](https://projects.halit.org/shotsnap/blog/html-to-image-nodejs.html): Turn HTML into a PNG: DOM-to-canvas libraries in the browser, headless Chrome with Puppeteer or Playwright in Node.js, or a hosted URL screenshot.
+- [What is headless Chrome, and do you need it for screenshots?](https://projects.halit.org/shotsnap/blog/what-is-headless-chrome.html): Headless Chrome is Chrome without a window. How to run it, the --screenshot and --print-to-pdf flags, old vs new headless, and when you can skip it.
+- [Selenium with headless Chrome: screenshots that work](https://projects.halit.org/shotsnap/blog/selenium-headless-chrome-screenshot.html): Take screenshots with Selenium and headless Chrome in Python and Node.js: the --headless=new flag, why --window-size is not the viewport, and full pages.
+- [Playwright vs Puppeteer for screenshots](https://projects.halit.org/shotsnap/blog/playwright-vs-puppeteer-screenshots.html): Screenshot code for Playwright and Puppeteer side by side: viewport, full page, elements, JPEG, HTML strings and Playwright's screenshot CLI, all tested.
+- [chrome-headless-shell: what it is and when to use it](https://projects.halit.org/shotsnap/blog/chrome-headless-shell.html): chrome-headless-shell is Chrome's old headless mode as a separate binary. Why it was split out, how to install it, and how Puppeteer and Playwright use it.
+- [Website screenshots on AWS Lambda without bundling Chrome](https://projects.halit.org/shotsnap/blog/screenshots-aws-lambda.html): Why headless Chrome is hard on AWS Lambda: the 250 MB package limit, @sparticuz/chromium, container images, and calling a hosted screenshot URL instead.
 
 ## Optional
 

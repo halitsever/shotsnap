@@ -63,7 +63,7 @@ Nothing launches on your machine. `takeScreenshot` sends the URL and screen size
 | Page interaction | Clicks, typing, logins, waiting for selectors | None |
 | Output | `Uint8Array` or base64 string | PNG as a Buffer |
 | Reachable pages | Anything your machine can open, including localhost | Public URLs only |
-| Limits | Your own CPU and memory | Rate limits on heavy use, and sites can block the API's IP address |
+| Limits | Your own CPU and memory | 7 requests per 10 minutes per IP, then HTTP 429; sites can block the API's IP address |
 
 Puppeteer is the stronger tool. Use it when you need more than a plain viewport capture: a full-page screenshot, one element, a page behind a login, or a site on localhost or a private network. It also keeps the URL on your own machine instead of sending it to a third-party service.
 
