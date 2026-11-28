@@ -121,7 +121,7 @@ import { takeScreenshot } from 'shotsnap'
 const png = await takeScreenshot({ pageUrl: 'https://example.com', screenWidth: 1280, screenHeight: 720, saveFile: true, fileName: 'example.png' })
 ```
 
-Two things to know from its source: it does not encode `pageUrl`, so pass `encodeURIComponent(url)` for URLs with their own query string, and it does not check the HTTP status, so after a 429 the Buffer holds the error text. [Getting started](/get-started#when-a-capture-fails) shows a PNG signature check, and [Props](/props) lists every option.
+It encodes `pageUrl` for you, so URLs with their own query string work as is. When the endpoint answers with an error such as a 429, the promise rejects with a `ShotsnapError` that carries the status, and no file is written. [Getting started](/get-started#when-a-capture-fails) shows how to catch it, and [Props](/props) lists every option.
 
 ## When to use something else
 

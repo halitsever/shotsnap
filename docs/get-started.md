@@ -44,12 +44,24 @@ The package also works with `import { takeScreenshot } from "shotsnap"` in ES mo
 
 ## When a capture fails
 
-- **Network errors.** If the request cannot reach the API, shotsnap logs `ShotSnap error:` with the cause through `console.warn`, and the promise rejects. Wrap the call in `try`/`catch`.
-- **Error responses.** The library does not check the HTTP status code. If the API answers with an error, the Buffer holds that error body instead of an image, and `saveFile` writes it to disk as is. A PNG file always starts with the bytes `89 50 4E 47`, so you can check before using the result:
+- **Network errors.** If the request cannot reach the API, the promise rejects with the error from the HTTP client. Wrap the call in `try`/`catch`.
+- **Error responses.** If the API answers with an error status, or with a body that is not an image, the promise rejects with a `ShotsnapError` and nothing is written to disk. The error has the HTTP `status`, the `contentType` and the raw `retryAfter` header, which is `null` when the API sends none. The hosted API answers HTTP 429 after 7 requests in 10 minutes and sends no `Retry-After`, so wait out the window before retrying:
 
 ```javascript
-const isPng = image.subarray(0, 4).toString("hex") === "89504e47";
+const { takeScreenshot, ShotsnapError } = require("shotsnap");
+
+try {
+  await takeScreenshot({ pageUrl: "https://example.com", saveFile: true, fileName: "example.png" });
+} catch (error) {
+  if (error instanceof ShotsnapError && error.status === 429) {
+    console.log("Rate limited, try again in 10 minutes");
+  } else {
+    throw error;
+  }
+}
 ```
+
+Version 0.2.2 and earlier did not check the status. On a 429 they returned the text `Too Many Requests` as the Buffer and wrote it to the PNG file.
 
 ## Next steps
 
